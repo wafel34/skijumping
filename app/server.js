@@ -9,7 +9,7 @@ app.get('/', function(req, res){
                 '<link rel="stylesheet" type="text/css" href="public/style.css">' +
             '</head>' +
             '<body>' +
-            '<p>Hello World!</p>' +
+            '<p>Hello World!!</p>' +
             '</body>' +
             '</html>')
 });

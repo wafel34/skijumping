@@ -9,9 +9,12 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    concat = require('gulp-concat'),
+    browserify = require('gulp-browserify');
 
 var sassSources = './resources/sass/style.sass',
+    jsSources = './resources/scripts/**/*.js',
     outputDir;
 
     outputDir = './app/public';
@@ -56,6 +59,21 @@ gulp.task('nodemon', function (cb) {
   });
 });
 
+//JS
+gulp.task('js', function () {
+   return gulp.src(jsSources)
+            .pipe(plumber({
+                errorHandler: onError
+            }))
+            .pipe(sourcemaps.init())
+            .pipe(concat('main.js'))
+            .pipe(browserify())
+            //.pipe(gulpIf(env === 'production', uglify()))
+            .pipe(sourcemaps.write())
+            .pipe(gulp.dest(outputDir + '/js'))
+            .pipe(browserSync.stream())
+});
+
 //SASS TO CSS
 gulp.task('sass', function () {
     return gulp.src(sassSources)
@@ -71,6 +89,6 @@ gulp.task('sass', function () {
             .pipe(browserSync.stream())
 });
 
-gulp.task('default', ['browser-sync', 'sass'], function () {
+gulp.task('default', ['browser-sync', 'sass', 'js'], function () {
   gulp.watch(['public/*.html'], reload);
 });
