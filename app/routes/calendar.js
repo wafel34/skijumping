@@ -12,7 +12,7 @@ router.get('/calendar', function(req, res){
                 '<link rel="stylesheet" type="text/css" href="/css/style.css">' +
             '</head>' +
             '<body>' +
-            '<p>Calendar</p>' + calendar[0].place + ", "+calendar[0].country +
+            '<p>Calendar!</p>' + calendar[0].place + ", "+calendar[0].country +
             '</body>' +
             '</html>');
 });
