@@ -1,5 +1,6 @@
 var express = require('express'),
-    app = express();
+    app = express(),
+    calendar = require('./data/calendar.json');
 
 
 app.use(express.static('app/public'));
@@ -12,9 +13,9 @@ app.get('/', function(req, res){
                 '<link rel="stylesheet" type="text/css" href="/css/style.css">' +
             '</head>' +
             '<body>' +
-            '<p>Hello World!!</p>' +
+            '<p>Hello World!!</p>' + calendar[0].place + ", "+calendar[0].country +
             '</body>' +
-            '</html>')
+            '</html>');
 });
 
 app.listen(5000);
