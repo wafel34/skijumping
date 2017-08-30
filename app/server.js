@@ -3,6 +3,8 @@ var express = require('express'),
     calendar = require('./data/calendar.json');
 
 app.set('calendar', calendar);
+app.set('view engine', "ejs");
+app.set('views', "./app/views");
 
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
