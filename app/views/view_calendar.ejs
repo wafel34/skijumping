@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<%include partials/templates/html_head%>
+<body>
+<%include partials/templates/header%>
+<ul>
+	<%calendar.forEach(function(item){%>
+        <li>
+            <p><%=item.date%></p>
+            <p><%=item.place%>, <%=item.country%></p>
+            <p>Type: <%=item.type%></p>
+        </li>
+    <%});%>
+</ul>
+<%include partials/templates/scripts%>
+</body>
+</html>

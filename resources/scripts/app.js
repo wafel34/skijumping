@@ -1,1 +1,2 @@
-var $ = window.jQuery = require("jQuery");
+var $ = window.jQuery = require("jQuery"),
+    bootstrap = require('bootstrap-sass');

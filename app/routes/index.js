@@ -5,7 +5,9 @@ var express = require('express'),
 router.get('/', function(req, res){
     var calendar = req.app.get('calendar');
 
-    res.render('view_index');
+    res.render('view_index', {
+        pageId: 'Ski Jumping'
+    });
 });
 
 
