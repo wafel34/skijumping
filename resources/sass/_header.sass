@@ -14,10 +14,16 @@
 
     .icon-bar
         background-color: white
+        transition: transform .3s ease-in-out
 
 .navbar-toggle[aria-expanded="true"]
-    .icon-bar
+    span
+        &:nth-of-type(2)
+            transform: translate(0,6px) rotate(45deg)
+        &:nth-of-type(4)
+            visibility: hidden
+        &:nth-of-type(3)
+            transform: rotate(-45deg)
+
 
 .navbar-toggle[aria-expanded="false"]
-    .icon-bar
-        &:first-of-type
