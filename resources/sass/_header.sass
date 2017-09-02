@@ -1,3 +1,5 @@
+//MAIN
+
 .header
     height: 400px
     background: url('../images/banner.jpg') no-repeat top center
@@ -16,6 +18,8 @@
         background-color: white
         transition: transform .3s ease-in-out
 
+
+
 .navbar-toggle[aria-expanded="true"]
     span
         &:nth-of-type(2)
@@ -27,3 +31,17 @@
 
 
 .navbar-toggle[aria-expanded="false"]
+
+//BOOTSTRAP OVERRIDES
+.nav > li >a:focus,
+.nav > li >a:hover
+    background-color: rgb(244, 66, 66)
+//MEDIA QUERIES
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 767px)
+    .navigation-list
+        background-color: rgba(244, 66, 66,.75)
+        margin: 1px -15px
+        text-align: center
