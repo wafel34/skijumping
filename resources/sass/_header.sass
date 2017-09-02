@@ -18,7 +18,11 @@
         background-color: white
         transition: transform .3s ease-in-out
 
-
+//BOOTSTRAP OVERRIDES
+.navbar-toggle
+    &:focus,
+    &:hover
+        background-color: rgb(244, 66, 66)
 
 .navbar-toggle[aria-expanded="true"]
     span
@@ -29,10 +33,6 @@
         &:nth-of-type(3)
             transform: rotate(-45deg)
 
-
-.navbar-toggle[aria-expanded="false"]
-
-//BOOTSTRAP OVERRIDES
 .nav > li >a:focus,
 .nav > li >a:hover
     background-color: rgb(244, 66, 66)
