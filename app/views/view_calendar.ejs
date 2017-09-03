@@ -2,16 +2,30 @@
 <html lang="en">
 <%include partials/templates/html_head%>
 <body>
+
 <%include partials/templates/header%>
-<ul>
-	<%calendar.forEach(function(item){%>
-        <li>
-            <p><%=item.date%></p>
-            <p><%=item.place%>, <%=item.country%></p>
-            <p>Type: <%=item.type%></p>
-        </li>
-    <%});%>
-</ul>
+
+<div class="container">
+	<h1 class="text-center">Season 2017/18 calendar</h1>
+	<ul class="calendar-list">
+	<%calendar.forEach(function(item, index){%>
+		<%if (index%2===0) {%>
+			<div class="row">
+		<%}%>
+				<div class="col-md-6">
+					<li class="calendar-list__item">
+						<p>Date: <%=item.date%></p>
+						<p>Place: <%=item.place%>, <%=item.country%></p>
+						<p>Type: <%=item.type%></p>
+					</li>
+				</div>
+			<%if (index%2) {%>
+			</div>
+		<%}%>
+	<%});%>
+	</ul>
+</div>
+
 <%include partials/templates/scripts%>
 </body>
 </html>
