@@ -6,7 +6,7 @@
 <%include partials/templates/header%>
 
 <div class="container">
-	<h1 class="text-center">Season 2017/18 calendar</h1>
+	<h1 class="calendar-header text-center">Season 2017/18 calendar</h1>
 	<ul class="calendar-list">
 	<%calendar.forEach(function(item, index){%>
 
@@ -17,13 +17,15 @@
 				<div class="col-md-6">
 					<%if(item.dateObj<today){%>
 						<li class="calendar-list__item calendar-list__item--passed">
+							<p class="completed">COMPLETED</p>
 					<%} else { %>
 						<li class="calendar-list__item">
 					<%}%>
-
 						<p>Date: <%=item.date%></p>
 						<p>Place: <%=item.place%>, <%=item.country%></p>
 						<p>Type: <%=item.type%></p>
+
+						<p class="read-more"><a href="/">Read more</a></p>
 					</li>
 				</div>
 			<%if (index%2) {%>
