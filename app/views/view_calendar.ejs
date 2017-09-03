@@ -9,11 +9,18 @@
 	<h1 class="text-center">Season 2017/18 calendar</h1>
 	<ul class="calendar-list">
 	<%calendar.forEach(function(item, index){%>
+
+
 		<%if (index%2===0) {%>
 			<div class="row">
 		<%}%>
 				<div class="col-md-6">
-					<li class="calendar-list__item">
+					<%if(item.dateObj<today){%>
+						<li class="calendar-list__item calendar-list__item--passed">
+					<%} else { %>
+						<li class="calendar-list__item">
+					<%}%>
+
 						<p>Date: <%=item.date%></p>
 						<p>Place: <%=item.place%>, <%=item.country%></p>
 						<p>Type: <%=item.type%></p>
