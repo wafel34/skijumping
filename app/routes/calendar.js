@@ -33,28 +33,6 @@ router.get('/calendar', function(req, res){
     });
 });
 
-router.get('/:hill', function(req, res){
-
-
-    var calendar = req.app.get('calendar'),
-        hill = req.params.hill,
-        len = calendar.length,
-        data = {},
-        i = 0;
-
-        for (i=0; i<len; i+=1){
-            if(calendar[i].place === hill) {
-                data = calendar[i];
-                break;
-            }
-        }
-
-
-    res.render('view_hill', {
-        data: data,
-        pageId: hill
-    });
-});
 
 
 module.exports = router;

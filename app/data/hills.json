@@ -1,0 +1,242 @@
+[
+    {
+        "place": "Wisla",
+        "country": "Poland",
+        "competitions": [
+            {
+                "date": "17/11/2017",
+                "type": "Summer GP"
+            },
+            {
+                "date": "18/11/2017",
+                "type": "Team"
+            }
+        ]
+    },
+    {
+        "place": "Ruka",
+        "country": "Finland",
+        "competitions": [
+            {
+                "date": "25/11/2017",
+                "type": "Team"
+            },
+            {
+                "date": "26/11/2017",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Nizhny Tagil",
+        "country": "Russia",
+        "competitions": [
+            {
+                "date": "02/12/2017",
+                "type": "Individual"
+            },
+            {
+                "date": "03/12/2017",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Titisee-Neustadt",
+        "country": "Germany",
+        "competitions": [
+            {
+                "date": "09/12/2017",
+                "type": "Team"
+            },
+            {
+                "date": "10/12/2017",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Engelberg",
+        "country": "Switzerland",
+        "competitions": [
+            {
+                "date": "16/12/2017",
+                "type": "Individual"
+            },
+            {
+                "date": "17/12/2017",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Oberstdorf",
+        "country": "Germany",
+        "competitions": [
+            {
+                "date": "30/12/2017",
+                "type": "Individual"
+            },
+            {
+                "date": "19/01/2018 - 21/01/2018",
+                "type": "Flying World Cup"
+            }
+        ]
+    },
+    {
+        "place": "Garmisch-Partenkirchen",
+        "country": "Germany",
+        "competitions": [
+            {
+                "date": "01/01/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Innsbruck",
+        "country": "Austria",
+        "competitions": [
+            {
+                "date": "04/01/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Bischofshofen",
+        "country": "Austria",
+        "competitions": [
+            {
+                "date": "06/01/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Bad Mitterndorf",
+        "country": "Austria",
+        "competitions": [
+            {
+                "date": "13/01/2018",
+                "type": "Individual"
+            },
+            {
+                "date": "14/01/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Zakopane",
+        "country": "Poland",
+        "competitions": [
+            {
+                "date": "27/01/2018",
+                "type": "Team"
+            },
+            {
+                "date": "28/01/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Willingen",
+        "country": "Germany",
+        "competitions": [
+            {
+                "date": "03/02/2018",
+                "type": "Individual"
+            },
+            {
+                "date": "04/02/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "PyeongChang",
+        "country": "South Korea",
+        "competitions": [
+            {
+                "date": "09/02/2018 - 25/02/2018",
+                "type": "Winter Olympics"
+            }
+        ]
+    },
+    {
+        "place": "Lahti",
+        "country": "Finland",
+        "competitions": [
+            {
+                "date": "03/03/2018",
+                "type": "Team"
+            },
+            {
+                "date": "04/03/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Oslo",
+        "country": "Norway",
+        "competitions": [
+            {
+                "date": "10/03/2018",
+                "type": "Team"
+            },
+            {
+                "date": "11/03/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Lillehammer",
+        "country": "Norway",
+        "competitions": [
+            {
+                "date": "13/03/2018",
+                "type": "Individual"
+            },
+            {
+                "date": "15/03/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Vikersund",
+        "country": "Norway",
+        "competitions": [
+            {
+                "date": "17/03/2018",
+                "type": "Team"
+            },
+            {
+                "date": "18/03/2018",
+                "type": "Individual"
+            }
+        ]
+    },
+    {
+        "place": "Planica",
+        "country": "Slovenia",
+        "competitions": [
+            {
+                "date": "23/03/2018",
+                "type": "Individual"
+            },
+            {
+                "date": "24/03/2018",
+                "type": "Team"
+            },
+            {
+                "date": "25/03/2018",
+                "type": "Individual"
+            }
+        ]
+    }
+]
