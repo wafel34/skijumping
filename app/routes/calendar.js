@@ -10,7 +10,6 @@ router.get('/calendar', function(req, res){
 
     var calendar = req.app.get('calendar'),
         today = new Date(),
-        today = Date.parse(today),
         dates = calendar.map(function(item){
             var temp = item.date.split('/'),
                 date = new Date(temp[2], temp[1], temp[0]);
@@ -24,7 +23,8 @@ router.get('/calendar', function(req, res){
             };
             return result;
         });
-
+        
+        today = Date.parse(today);
 
     res.render('view_calendar', {
         calendar: dates,
