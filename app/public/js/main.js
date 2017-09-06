@@ -12636,5 +12636,15 @@ return jQuery;
 var $ = window.jQuery = require("jQuery"),
     bootstrap = require('bootstrap-sass');
 
+(function(){
+    var title = document.title,
+        imageHeader = document.getElementById('image-header');
+
+        if(imageHeader){
+            imageHeader.style.backgroundImage = `url('../images/hills/${title}.jpg')`;
+        }
+
+}());
+
 },{"bootstrap-sass":1,"jQuery":2}]},{},[3])
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0EiLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciAkID0gd2luZG93LmpRdWVyeSA9IHJlcXVpcmUoXCJqUXVlcnlcIiksXHJcbiAgICBib290c3RyYXAgPSByZXF1aXJlKCdib290c3RyYXAtc2FzcycpO1xyXG4iXX0=
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiJtYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsidmFyICQgPSB3aW5kb3cualF1ZXJ5ID0gcmVxdWlyZShcImpRdWVyeVwiKSxcclxuICAgIGJvb3RzdHJhcCA9IHJlcXVpcmUoJ2Jvb3RzdHJhcC1zYXNzJyk7XHJcblxyXG4oZnVuY3Rpb24oKXtcclxuICAgIHZhciB0aXRsZSA9IGRvY3VtZW50LnRpdGxlLFxyXG4gICAgICAgIGltYWdlSGVhZGVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2ltYWdlLWhlYWRlcicpO1xyXG5cclxuICAgICAgICBpZihpbWFnZUhlYWRlcil7XHJcbiAgICAgICAgICAgIGltYWdlSGVhZGVyLnN0eWxlLmJhY2tncm91bmRJbWFnZSA9IGB1cmwoJy4uL2ltYWdlcy9oaWxscy8ke3RpdGxlfS5qcGcnKWA7XHJcbiAgICAgICAgfVxyXG5cclxufSgpKTtcclxuIl19
