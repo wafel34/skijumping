@@ -11,9 +11,9 @@ router.get('/calendar', function(req, res){
     var calendar = req.app.get('calendar'),
         today = new Date(),
         dates = calendar.map(function(item){
+            //split the date and create new variable that will count miliseconds since 1970 up to date (21 parameter is an evening hour)
             var temp = item.date.split('/'),
-                date = new Date(temp[2], temp[1], temp[0]);
-                date = Date.parse(date);
+                date = new Date(Date.UTC(temp[2], temp[1]-1, temp[0],21,0,0));
             var result = {
                 "place": item.place,
                 "country": item.country,
@@ -23,8 +23,7 @@ router.get('/calendar', function(req, res){
             };
             return result;
         });
-        
-        today = Date.parse(today);
+
 
     res.render('view_calendar', {
         calendar: dates,
