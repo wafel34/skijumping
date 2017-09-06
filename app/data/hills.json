@@ -2,6 +2,12 @@
     {
         "place": "Wisla",
         "country": "Poland",
+        "name": "Malinka, Adam Malysz Hill",
+        "hillSize": "HS 134",
+        "kPoint": "K-120",
+        "hillRecord": "139m - Stefan Kraft - 2013",
+        "yt": "https://www.youtube.com/embed/z2xQHlMpiKs",
+        "description": "This venue hosts competitions of FIS Ski Jumping Continental Cup, FIS Ski Jumping Grand Prix and FIS Ski Jumping World Cup. Before the last renovation (2004-2008) this ski jump hosted only local events. Since 2010 the HS 134 in Wisła has been annual host of summer Grand Prix events. The first World Cup competition on Adam Małysz ski jump took place on January 9, 2013. Norway's Anders Bardal won the first place and Austria's Stefan Kraft set up a hill record of 139 meters during qualification. Very special of the new built Malinka ski jumping hill is the road, which had to be barricade during training jumps on the old hill and no leading through a tunnel below the artificial hill in the outrun. Above this street is the main stand which will host 2,500 spectators and official buildings. The facilities are constructed out of stone, wood, glass, aluminium and natural concrete and shall be functional, innovative and nice.",
         "competitions": [
             {
                 "date": "17/11/2017",
@@ -16,6 +22,12 @@
     {
         "place": "Ruka",
         "country": "Finland",
+        "name": "Rukatunturi, Kuusamo",
+        "hillSize": "HS 142",
+        "kPoint": "K-120",
+        "hillRecord": "148.5m - Eric Frenzel - 2010",
+        "yt": "https://www.youtube.com/embed/_hRZ0b0ap4Y",
+        "description": "The Rukatunturi ski jumping hill, located in Kuusamo, is the largest ski jumping hill in Finland. It regularly hosts the opening event of the ski jumping World Cup. The large hill and two smaller hills have a plastic matting. The official record is 148.5 metres, jumped by Eric Frenzel, in the Nordic Combination Jumpingcompetition in 2010.",
         "competitions": [
             {
                 "date": "25/11/2017",
@@ -30,6 +42,12 @@
     {
         "place": "Nizhny Tagil",
         "country": "Russia",
+        "name": "Tramplin Stork",
+        "hillSize": "HS 96, 134",
+        "kPoint": "K90, 120",
+        "hillRecord": "140.5m - Johan Andre Forfang - 2015, 102.5m - Mikhail Maksimochkin - 2014",
+        "yt": "https://www.youtube.com/embed/uq0NaLExY_o",
+        "description": "Tramplin Stork (nickname:Aist) is a ski jumping arena in Nizhniy Tagil, Russia. It is a venue in the FIS Ski jumping World Cup.",
         "competitions": [
             {
                 "date": "02/12/2017",
@@ -44,6 +62,12 @@
     {
         "place": "Titisee-Neustadt",
         "country": "Germany",
+        "name": "Hochfirst ",
+        "hillSize": "HS 142",
+        "kPoint": "K-125",
+        "hillRecord": "148m - Domen Prevc - 2016",
+        "yt": "https://www.youtube.com/embed/GcfCh7EITyw",
+        "description": "The Hochfirst Ski Jump (Hochfirstschanze) is a ski jumping hill located in Titisee-Neustadt in Germany.",
         "competitions": [
             {
                 "date": "09/12/2017",
@@ -58,6 +82,12 @@
     {
         "place": "Engelberg",
         "country": "Switzerland",
+        "name": "Gross-Titlis-Schanze ",
+        "hillSize": "HS 137",
+        "kPoint": "K-125",
+        "hillRecord": "144m - Domen Prevc - 2016",
+        "yt": "https://www.youtube.com/embed/PrLjJrID4Xg",
+        "description": "Gross-Titlis-Schanze (en: Large Titlis hill) is a ski jumping venue in Engelberg, Switzerland. It is named after the local mountain of Titlis. It is a regular venue in the FIS Ski jumping World Cup.",
         "competitions": [
             {
                 "date": "16/12/2017",
@@ -72,11 +102,29 @@
     {
         "place": "Oberstdorf",
         "country": "Germany",
+        "name": "Schattenbergschanze ",
+        "hillSize": "HS 100, 137",
+        "kPoint": "K-90, 120",
+        "hillRecord": "102m - Rok Benkobic - 2005, 143.5m - Sigurd Pettersen - 2003",
+        "yt": "https://www.youtube.com/embed/hg2ZL2t5GCc",
+        "description": "Schattenbergschanze is a ski jumping hill located in Oberstdorf, Bavaria, Germany. The hill has held two FIS Nordic World Ski Championships and has served as the opening round of the Four Hills Tournament on 30 December every year since 1952. It should not be confused with another venue in Oberstdorf, the Heini-Klopfer ski flying hill, about 7 kilometres to the south.",
         "competitions": [
             {
                 "date": "30/12/2017",
                 "type": "Individual"
-            },
+            }
+        ]
+    },
+    {
+        "place": "Oberstdorf Heini-Klopfer",
+        "country": "Germany",
+        "name": "Heini-Klopfer-Skiflugschanze",
+        "hillSize": "HS-225",
+        "kPoint": "K-200",
+        "hillRecord": "238m - Andreas Wellinger - 2017",
+        "yt": "https://www.youtube.com/embed/rpjHUNAIgsA",
+        "description": "Heini-Klopfer-Skiflugschanze (English: Heini Klopfer Flying Hill) is a ski flying hill in Oberstdorf, Germany. The hill is named after its designer Heini Klopfer, a ski jumping architect from Oberstdorf, in 1970. It should not be confused with another venue in Oberstdorf, the Schattenberg ski jumping hill, about 7 kilometres to the north.",
+        "competitions": [
             {
                 "date": "19/01/2018 - 21/01/2018",
                 "type": "Flying World Cup"
@@ -86,6 +134,12 @@
     {
         "place": "Garmisch-Partenkirchen",
         "country": "Germany",
+        "name": "Große Olympiaschanze",
+        "hillSize": "HS-140",
+        "kPoint": "K-120",
+        "hillRecord": "143.5m - Simon Amman - 2010",
+        "yt": "https://www.youtube.com/embed/Qnk87xtM5yM",
+        "description": "The hill has undergone two renovations in 1978 and 2007. Due to a required upgrade of the jump to the advanced technical standards of the International Skiing Federation (FIS), the construction of an entirely new ski jump was inevitable. Among projects by Zaha Hadid Architects, Behnisch Architects and others, an international architectural competition in autumn 2006 led to the decision to erect a cantilevering structure as the new landmark of ski sports, designed by terrain:loenhart&mayr. Construction at the site started on April, 26th 2007. The grand opening ceremony at the Continental Cup / Four Hills Tournament was on New Year's Day 2008. The tower offers a panoramic view of the surrounding valley of Garmisch-Partenkirchen. Adjacent to the ski jumps is the Gudiberg alpine slalom piste, upgraded prior to the 2011 World Championships. On 31 December 2014 Anders Jacobsen jumped 145 m at training but it does not count as a new hill record because it was training before qualification.",
         "competitions": [
             {
                 "date": "01/01/2018",
@@ -96,6 +150,12 @@
     {
         "place": "Innsbruck",
         "country": "Austria",
+        "name": "Bergiselschanze",
+        "hillSize": "HS-130",
+        "kPoint": "K-120",
+        "hillRecord": "138m - Michael Hayböck - 2015",
+        "yt": "https://www.youtube.com/embed/liGWmExd19E",
+        "description": "The Bergisel Sprungschanze Stadion, which has a capacity of 26,000, is a ski jumping hill stadium located in Bergisel in Innsbruck, Austria. It is one of the more important venues in the FIS Ski Jumping World Cup, annually hosting the third competition of the prestigious Four Hills Tournament. Its first competitions were held in the 1920s using simple wood constructions. The larger hill was first built in 1930 and was rebuilt before the 1964 Winter Olympics for the individual large hill event. Twelve years later, the venue hosted the same event. The hill in its current form was finished in 2003 and was designed by the British Iraqi architect Zaha Hadid.",
         "competitions": [
             {
                 "date": "04/01/2018",
@@ -106,6 +166,12 @@
     {
         "place": "Bischofshofen",
         "country": "Austria",
+        "name": "Paul-Ausserleitner-Schanze",
+        "hillSize": "HS-140",
+        "kPoint": "K-125",
+        "hillRecord": "144.5m - Andreas Wellinger - 2017",
+        "yt": "https://www.youtube.com/embed/jsOmjboCLks",
+        "description": "Paul-Ausserleitner-Schanze (\"Paul Ausserleitner Hill\") was opened in 1941, and re-built in 2003, and is a ski jumping venue in Bischofshofen, Austria. It is one of the more important venues in the FIS Ski jumping World Cup, annually hosting the fourth and final competition of the prestigious Four Hills Tournament. It is named after Paul Ausserleitner, an Austrian ski jumper who died of the consequences of a fall on this hill in 1952.",
         "competitions": [
             {
                 "date": "06/01/2018",
@@ -116,6 +182,12 @@
     {
         "place": "Bad Mitterndorf",
         "country": "Austria",
+        "name": "Kulm",
+        "hillSize": "HS-225",
+        "kPoint": "K-200",
+        "hillRecord": "244m - Peter Prevc - 2016",
+        "yt": "https://www.youtube.com/embed/FgN-JkL3VXM",
+        "description": "Kulm is a ski flying hill located in Tauplitz/Bad Mitterndorf, Styria, Austria. Opened on 8 March 1950, the hill is one of only five of its type in the world, allowing for jumps of more than 240 metres. The current hill record of 244 m was set by Peter Prevc during the 2016 Ski Flying World Championships. The women's world record of 200 m was set by Daniela Iraschko-Stolz in 2003, who remains the only woman in history to have jumped to 200 m. Furthermore, the men's world record has been set three times at Kulm. The venue has hosted the Ski Flying World Championships five times, in 1975, 1986, 1996, 2006, and 2016. For the World Cup event in 2015, the hill was completely renovated to a K-point of 200 m and a hill size of 225 m, making much longer jumps possible.",
         "competitions": [
             {
                 "date": "13/01/2018",
@@ -130,6 +202,12 @@
     {
         "place": "Zakopane",
         "country": "Poland",
+        "name": "Wielka Krokiew",
+        "hillSize": "HS-134",
+        "kPoint": "K-120",
+        "hillRecord": "140.5m - Simon Amman - 2010",
+        "yt": "https://www.youtube.com/embed/W7usdflBj4I",
+        "description": "Wielka Krokiew (The Great Krokiew, in Polish krokiew means rafter) is the one - the biggest - of ski jumps built on the slope of Krokiew mountain (1378 m) in Zakopane, Poland. It was opened in 1925. From 1989 the ski jump bears the official name Wielka Krokiew im. Stanisława Marusarza. It is a regular venue in the FIS Ski jumping World Cup. The capacity of the ski jumping stadium is 40,000.",
         "competitions": [
             {
                 "date": "27/01/2018",
@@ -144,6 +222,12 @@
     {
         "place": "Willingen",
         "country": "Germany",
+        "name": "Mühlenkopfschanze",
+        "hillSize": "HS-145",
+        "kPoint": "K-130",
+        "hillRecord": "152m - Jane Ahonen - 2005, Jurij Tepes - 2014",
+        "yt": "https://www.youtube.com/embed/k2HWB93SWVk",
+        "description": "Mühlenkopfschanze is a ski jumping hill located in Willingen, Germany. The audience capacity is 35,000. It is the largest ski jumping hill in the world, and holds World Cup events every year. The current hill record was set by Janne Ahonen in 2005. Ahonen jumped 155.5 metres, but the measuring system could only measure as far as 152 m, thus downgrading Ahonen's record to this figure. Jurij Tepeš equalled this distance in 2014.",
         "competitions": [
             {
                 "date": "03/02/2018",
@@ -158,6 +242,12 @@
     {
         "place": "PyeongChang",
         "country": "South Korea",
+        "name": "Alpensia Ski Jumping Stadium",
+        "hillSize": "HS-109, 140",
+        "kPoint": "K-98, 125",
+        "hillRecord": "139.5 - Stephan Leye - 2017, Anze Lanisek - 2017",
+        "yt": "https://www.youtube.com/embed/5pDPqEqsNG0",
+        "description": "Alpensia Ski Jumping Stadium (알펜시아 스키점프 경기장) is a multi-purpose stadium located at Alpensia Resort in Pyeongchang, South Korea. It will host ski jumping events during the 2018 Winter Olympics, and also operates as an association football venue for Gangwon FC by using its landing area as the pitch.t was originally planned that this stadium will host the opening and closing ceremonies for the 2018 Winter Olympics. It is now scheduled to host only the ski jumping and the nordic combined events. The stadium holds a maximum of 13,500 spectators, and was built in 2008; for the games the stadium will accommodate 11,000 seats.",
         "competitions": [
             {
                 "date": "09/02/2018 - 25/02/2018",
@@ -168,6 +258,12 @@
     {
         "place": "Lahti",
         "country": "Finland",
+        "name": "Salpausselkä",
+        "hillSize": "HS-97, 130",
+        "kPoint": "K-90, 116",
+        "hillRecord": "103.5 - Kamil Stoch - 2017, 138 - Johan Andre Forfang - 2017",
+        "yt": "https://www.youtube.com/embed/DGb0Sa-5nP8",
+        "description": "Salpausselkä is a ski jumping venue in Lahti, Finland. The hills are K116, K90, K64, K38, K25, K15, K8 and K6.",
         "competitions": [
             {
                 "date": "03/03/2018",
@@ -182,6 +278,12 @@
     {
         "place": "Oslo",
         "country": "Norway",
+        "name": "Holmenkollbakken",
+        "hillSize": "HS-134",
+        "kPoint": "K-120",
+        "hillRecord": "141m - Andreas Kofler - 2011",
+        "yt": "https://www.youtube.com/embed/z1HggjpAAIs",
+        "description": "Holmenkollbakken is a large ski jumping hill located at Holmenkollen in Oslo, Norway. It has a hill size of HS134, a construction point of K-120, and a capacity for 70,000 spectators. Holmenkollen has hosted the Holmenkollen Ski Festival since 1892, which since 1980 have been part of the FIS Ski Jumping World Cup and 1983 the FIS Nordic Combined World Cup. It has also hosted the 1952 Winter Olympics and the FIS Nordic World Ski Championships in 1930, 1966, 1982 and 2011. The hill has been rebuilt 19 times; important upgrades include a stone take-off in 1910, an in-run superstructure in 1914, and a new superstructure in 1928. During the Second World War, the venue was used as a military installation, but upgraded in the late 1940s. Further expansions were made ahead of the 1966 and 1982 World Championships, as well as in 1991. Between 2008 and 2010, the entire structure was demolished and rebuilt. As of 8 February 2011, the hill record is unofficially held by Anders Jacobsen at 142.5 meters. The official hill record was set at 5 March 2011 by Andreas Kofler at 141 meters. The hill is part of Holmenkollen National Arena, which in addition to cross-country and biathlon venues has the normal hill Midtstubakken.",
         "competitions": [
             {
                 "date": "10/03/2018",
@@ -196,6 +298,12 @@
     {
         "place": "Lillehammer",
         "country": "Norway",
+        "name": "Lysgårdsbakken",
+        "hillSize": "HS-100, 138",
+        "kPoint": "K-90, 123",
+        "hillRecord": "107.5m - Karl Geiger - 2013, 146m - Simon Amman - 2009",
+        "yt": "https://www.youtube.com/embed/mqcjLnfLsNQ",
+        "description": "Lysgårdsbakken, officially known as Lysgårdsbakkene Ski Jumping Arena (Norwegian: Lysgårdsbakkene hoppanlegg), is a ski jumping hill in Lillehammer, Norway. It consists of a large hill, with a K-point of 123 and a hill size of 138, and a small hill with a K-point of 90 and a hill size of 100. It opened in 1993 for the 1994 Winter Olympics, where it hosted the ski jumping and Nordic combined events, as well as the opening and closing ceremonies. After the Olympics, ownership was transferred to the municipal Lillehammer Olympiapark and it has since been used for several FIS Ski Jumping World Cup and FIS Nordic Combined World Cup tournaments, including hosting the Nordic Tournament. It has a capacity for 35,000 spectators and is one of three national ski jumping hills in Norway. In 2007, the large hill was rebuilt to a larger profile, and received a new plastic lining. The venue sees 80,000 annual jumps in the winter and 20,000 in the summer season.",
         "competitions": [
             {
                 "date": "13/03/2018",
@@ -210,6 +318,12 @@
     {
         "place": "Vikersund",
         "country": "Norway",
+        "name": "Vikersundbakken",
+        "hillSize": "HS-225",
+        "kPoint": "K-200",
+        "hillRecord": "253.5m - Stefan Kraft - 2017",
+        "yt": "https://www.youtube.com/embed/kWnGOTLnVC8",
+        "description": "Vikersundbakken or Vikersund Hill is a ski flying hill at Vikersund in Modum, Norway. It is one of the largest in the world. Nine world records have been set on the hill, with the current of 253.5 meters being set by Stefan Kraft. The complex also consists of a large hill, a normal hill and several training hills. The hill opened in 1936 as a large hill. It was rebuilt to become a ski flying hill in 1964 and has later been converted in 1989, 1999 and 2010. The large hill was built in 1988. The hill was the first to receive floodlights in 2006. It has hosted the FIS Ski Flying World Championships four times, in 1977, 1990, 2000, 2012.",
         "competitions": [
             {
                 "date": "17/03/2018",
@@ -224,6 +338,12 @@
     {
         "place": "Planica",
         "country": "Slovenia",
+        "name": "Letalnica",
+        "hillSize": "HS-225",
+        "kPoint": "K-200",
+        "hillRecord": "251.5m - Kamil Stoch - 2017",
+        "yt": "https://www.youtube.com/embed/zpunwWkgD74",
+        "description": "etalnica bratov Gorišek (English: Flying hill of Gorišek brothers) is a ski flying hill and the biggest of eight hills located at the Planica Nordic Centre in Planica, Slovenia. It was built in 1969 and is named after the original constructors and brothers Vlado (also known as Lado) and Janez Gorišek. With a total of 28 world records set it is the world leading ski jump hill in this statistic. The world's steepest zip-line with average incline of 38.33% (20.9°) and maximum incline of 58.7% (30.5°) incline opened at the hill on 19 September 2015. Yugoslavian ski jumper Miro Oman made the premiere test jump of 135 metres (443 ft) on 6 March 1969. The first ever FIS Ski Flying World Championships were organized on this hill in 1972. After Matti Nykänen set a world record jump of 191 metres (627 ft) at the SFWC 1985, a new rule was instituted by the FIS that no points for jumps over this distance would be awarded in order to prevent world record hunting. On 17 March 1994 Andreas Goldberger touched the snow with his hand at 202 metres (663 ft) for the first ever albeit disqualified over two hundred metre jump. Just a few minutes later Toni Nieminen landed on his feet at 203 metres (666 ft) and officially became the first man in history to jump over two hundred metres. In addition, the first ever jumps over 160 m, 170 m, 180 m, 190 m, 200 m, 210 m, 220 m and 230 m were recorded at the hill. The hill will host the FIS Ski Flying World Championships in 2020.",
         "competitions": [
             {
                 "date": "23/03/2018",
