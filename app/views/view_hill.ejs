@@ -5,13 +5,54 @@
 <%include partials/templates/header%>
 
 <div class="container">
-    <div id="image-header" class="image-header">
-
+    <div class="image-header">
+        <img src="/images/hills/<%=data.place%>.jpg" alt="<%=data.name%>" class="image-header__img">
     </div>
+
     <h1 class="text-center"><%=data.place%>, <%=data.country%></h1>
-    <h2><%=data.name%></h2>
+
+    <div class="row-flex">
+        <div class="col-sm-5">
+            <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Details:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Name:</th>
+                            <th><%=data.name%></th>
+                        </tr>
+                        <tr>
+                            <th>Hill Size:</th>
+                            <th><%=data.hillSize%></th>
+                        </tr>
+                        <tr>
+                            <th>K-Point:</th>
+                            <th><%=data.kPoint%></th>
+                        </tr>
+                        <tr>
+                            <th>Hill Record:</th>
+                            <th>
+                            <%if (typeof data.hillRecord==='object'){%>
+                                <%data.hillRecord.map(function(item){%>
+                                    <%=item%><br>
+                                <%})%>
+                            <%} else {%>
+                                <%=data.hillRecord%>
+                            <%}%>
+                            </th>
+                        </tr>
+                    </tbody>
+            </table>
+
+        </div>
+        <div class="col-sm-7">
+            <iframe class="iframe" src="<%=data.yt%>" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
     <p><%=data.description%></p>
-    <iframe width="560" height="315" src="<%=data.yt%>" frameborder="0" allowfullscreen></iframe>
 </div><!--container-->
 
 

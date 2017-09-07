@@ -45,7 +45,7 @@
         "name": "Tramplin Stork",
         "hillSize": "HS 96, 134",
         "kPoint": "K90, 120",
-        "hillRecord": "140.5m - Johan Andre Forfang - 2015, 102.5m - Mikhail Maksimochkin - 2014",
+        "hillRecord": ["140.5m - Johan Andre Forfang - 2015", "102.5m - Mikhail Maksimochkin - 2014"],
         "yt": "https://www.youtube.com/embed/uq0NaLExY_o",
         "description": "Tramplin Stork (nickname:Aist) is a ski jumping arena in Nizhniy Tagil, Russia. It is a venue in the FIS Ski jumping World Cup.",
         "competitions": [
@@ -105,7 +105,7 @@
         "name": "Schattenbergschanze ",
         "hillSize": "HS 100, 137",
         "kPoint": "K-90, 120",
-        "hillRecord": "102m - Rok Benkobic - 2005, 143.5m - Sigurd Pettersen - 2003",
+        "hillRecord": ["102m - Rok Benkobic - 2005", "143.5m - Sigurd Pettersen - 2003"],
         "yt": "https://www.youtube.com/embed/hg2ZL2t5GCc",
         "description": "Schattenbergschanze is a ski jumping hill located in Oberstdorf, Bavaria, Germany. The hill has held two FIS Nordic World Ski Championships and has served as the opening round of the Four Hills Tournament on 30 December every year since 1952. It should not be confused with another venue in Oberstdorf, the Heini-Klopfer ski flying hill, about 7 kilometres to the south.",
         "competitions": [
@@ -261,7 +261,7 @@
         "name": "Salpausselkä",
         "hillSize": "HS-97, 130",
         "kPoint": "K-90, 116",
-        "hillRecord": "103.5 - Kamil Stoch - 2017, 138 - Johan Andre Forfang - 2017",
+        "hillRecord": ["103.5 - Kamil Stoch - 2017", "138 - Johan Andre Forfang - 2017"],
         "yt": "https://www.youtube.com/embed/DGb0Sa-5nP8",
         "description": "Salpausselkä is a ski jumping venue in Lahti, Finland. The hills are K116, K90, K64, K38, K25, K15, K8 and K6.",
         "competitions": [
@@ -301,7 +301,7 @@
         "name": "Lysgårdsbakken",
         "hillSize": "HS-100, 138",
         "kPoint": "K-90, 123",
-        "hillRecord": "107.5m - Karl Geiger - 2013, 146m - Simon Amman - 2009",
+        "hillRecord": ["107.5m - Karl Geiger - 2013", "146m - Simon Amman - 2009"],
         "yt": "https://www.youtube.com/embed/mqcjLnfLsNQ",
         "description": "Lysgårdsbakken, officially known as Lysgårdsbakkene Ski Jumping Arena (Norwegian: Lysgårdsbakkene hoppanlegg), is a ski jumping hill in Lillehammer, Norway. It consists of a large hill, with a K-point of 123 and a hill size of 138, and a small hill with a K-point of 90 and a hill size of 100. It opened in 1993 for the 1994 Winter Olympics, where it hosted the ski jumping and Nordic combined events, as well as the opening and closing ceremonies. After the Olympics, ownership was transferred to the municipal Lillehammer Olympiapark and it has since been used for several FIS Ski Jumping World Cup and FIS Nordic Combined World Cup tournaments, including hosting the Nordic Tournament. It has a capacity for 35,000 spectators and is one of three national ski jumping hills in Norway. In 2007, the large hill was rebuilt to a larger profile, and received a new plastic lining. The venue sees 80,000 annual jumps in the winter and 20,000 in the summer season.",
         "competitions": [

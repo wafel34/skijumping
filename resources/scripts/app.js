@@ -1,6 +1,6 @@
 var $ = window.jQuery = require("jQuery"),
     bootstrap = require('bootstrap-sass');
-
+/*
 (function(){
     var title = document.title,
         imageHeader = document.getElementById('image-header');
@@ -10,3 +10,4 @@ var $ = window.jQuery = require("jQuery"),
         }
 
 }());
+*/

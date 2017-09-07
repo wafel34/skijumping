@@ -14,7 +14,6 @@ router.get('/:hill', function(req, res){
             }
         });
 
-
     res.render('view_hill', {
         data: result,
         pageId: hill

@@ -1,5 +1,30 @@
+.row-flex
+    display: flex
+    flex-direction: row
+    margin: 25px -15px
+
 .image-header
     height: 400px
-    background-size: cover
     border: 5px solid $main-grey
     margin: 25px 0
+    +element('img')
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: top
+.col-md-5
+    padding: 20px 0
+
+.iframe
+    width: 100%
+    height: 100%
+
+@media (max-width: 768px)
+    .row-flex
+        display: flex
+        flex-direction: column
+    .image-header
+        height: 150px
+    .iframe
+        height: 50vh
+        margin: 0 auto
