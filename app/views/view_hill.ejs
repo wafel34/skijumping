@@ -12,29 +12,29 @@
     <h1 class="text-center"><%=data.place%>, <%=data.country%></h1>
 
     <div class="row-flex">
-        <div class="col-sm-5">
+        <div class="col-sm-6 row-flex__column">
             <table class="table table-responsive">
                     <thead>
                         <tr>
-                            <th>Details:</th>
+                            <th class="table-item--bold">Details:</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>Name:</th>
-                            <th><%=data.name%></th>
+                            <th class="table-item--bold">Name:</th>
+                            <th class="table-item--light"><%=data.name%></th>
                         </tr>
                         <tr>
-                            <th>Hill Size:</th>
-                            <th><%=data.hillSize%></th>
+                            <th class="table-item--bold">Hill Size:</th>
+                            <th class="table-item--light"><%=data.hillSize%></th>
                         </tr>
                         <tr>
-                            <th>K-Point:</th>
-                            <th><%=data.kPoint%></th>
+                            <th class="table-item--bold">K-Point:</th>
+                            <th class="table-item--light"><%=data.kPoint%></th>
                         </tr>
                         <tr>
-                            <th>Hill Record:</th>
-                            <th>
+                            <th class="table-item--bold">Hill Record:</th>
+                            <th class="table-item--light">
                             <%if (typeof data.hillRecord==='object'){%>
                                 <%data.hillRecord.map(function(item){%>
                                     <%=item%><br>
@@ -46,12 +46,12 @@
                         </tr>
                     </tbody>
             </table>
-
         </div>
-        <div class="col-sm-7">
+
+        <div class="col-sm-6">
             <iframe class="iframe" src="<%=data.yt%>" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
+    </div><!--row-flex-->
     <p><%=data.description%></p>
 </div><!--container-->
 

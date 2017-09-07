@@ -3,11 +3,13 @@
     height: 400px
     background: url('../images/banner.jpg') no-repeat top center
     background-size: cover
-    border-bottom: 5px solid $main-grey
+    border-bottom: 2px solid $theme-stormy
+    background-color: #494e6b
+    background-blend-mode: overlay
 
 .navigation
     height: 52px
-    background-color: rgba(244, 66, 66,.75)
+    background-color: rgba(152, 94, 109, .65)
     border-bottom: 2px solid #fff
 
     a
@@ -21,7 +23,7 @@
 .navbar-toggle
     &:focus,
     &:hover
-        background-color: rgb(244, 66, 66)
+        background-color: $theme-sunset
 
 .navbar-toggle[aria-expanded="true"]
     span
@@ -34,14 +36,14 @@
 
 .nav > li >a:focus,
 .nav > li >a:hover
-    background-color: rgb(244, 66, 66)
+    background-color: $theme-sunset
 //MEDIA QUERIES
 
 //MEDIA QUERIES
 
 @media screen and (max-width: 767px)
     .navigation-list
-        background-color: rgba(244, 66, 66,.75)
+        background-color: rgba(152, 94, 109, .65)
         margin: 1px -15px
         text-align: center
 
