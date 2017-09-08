@@ -1,7 +1,7 @@
 var express = require('express'),
     router = express.Router();
 
-router.get('/:hill', function(req, res){
+router.get('/hills/:hill', function(req, res){
 
 
     var hillsList = req.app.get('hillsList'),
