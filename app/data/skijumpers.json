@@ -1,6 +1,7 @@
 [
     {
         "name": "Kamil Stoch",
+        "image": "Kamil_Stoch.jpg",
         "age": "30",
         "city": "Zakopane",
         "PB": "251.5m - Planica 2017",
@@ -26,6 +27,7 @@
     },
     {
         "name": "Piotr Żyla",
+        "image": "Piotr_Zyla.jpg",
         "age": "30",
         "city": "Cieszyn",
         "PB": "245.5m - Vikersund 2017",
@@ -45,6 +47,7 @@
     },
     {
         "name": "Maciej Kot",
+        "image": "Maciej_Kot.jpg",
         "age": "26",
         "city": "Limanowa",
         "PB": "244.5m - Vikersund 2017",
@@ -64,6 +67,7 @@
     },
     {
         "name": "Dawid Kubacki",
+        "image": "Dawid_Kubacki.jpg",
         "age": "27",
         "city": "Nowy Targ",
         "PB": "232m - Vikersund 2017",
@@ -83,6 +87,7 @@
     },
     {
         "name": "Jan Ziobro",
+        "image": "Jan_Ziobro.jpg",
         "age": "26",
         "city": "Rabka-Zdroj",
         "PB": "216m - Oberstdorf 2017",
@@ -102,6 +107,7 @@
     },
     {
         "name": "Stefan Hula",
+        "image": "Stefan_Hula.jpg",
         "age": "30",
         "city": "Bielsko-Biala",
         "PB": "217m - Planica 2016",
@@ -112,15 +118,11 @@
             "teamPodiums": "2",
             "indStarts": "149"
         },
-        "worldChampionschips": {
-            "gold": null,
-            "silver": null,
-            "bronze": null,
-        },
         "summary": "Stefan Hula(born 29 September 1986) is a Polish ski jumper who has competed since 2002. He competed twice at the Winter Olympic Games in Turin 2006 and Vancouver 2010. His best result is the first place on the Continental Cup competition in Planica."
     },
     {
         "name": "Aleksander Zniszczoł",
+        "image": "Aleksander_Zniszczol.jpg",
         "age": "23",
         "city": "Cieszyn",
         "PB": "213m - Tauplitz 2015",
@@ -131,15 +133,11 @@
             "teamPodiums": "1",
             "indStarts": "35"
         },
-        "worldChampionschips": {
-            "gold": null,
-            "silver": null,
-            "bronze": null,
-        },
         "summary": "Aleksander Zniszczoł (born 8 March 1994) is a Polish ski jumper, a member of youth Polish ski jumping team, 2014 World Junior Champion in team."
     },
     {
         "name": "Krzysztof Miętus",
+        "image": "Krzysztof_Mietus.jpg",
         "age": "26",
         "city": "Zakopane",
         "PB": "210m - Vikersund 2010",
@@ -150,11 +148,6 @@
             "teamPodiums": "0",
             "indStarts": "60"
         },
-        "worldChampionschips": {
-            "gold": null,
-            "silver": null,
-            "bronze": null,
-        },
         "summary": "Krzysztof Miętus (born 8 March 1991) is a Polish ski jumper, who has competed since 2008. He is a member of Polish youth team, he participated in the Olympics in Vancouver 2010."
-    },
+    }
 ]

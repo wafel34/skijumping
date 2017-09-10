@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<%include partials/templates/html_head%>
+<body>
+
+<%include partials/templates/header%>
+
+<div class="container">
+	<h1 class="calendar-header text-center">Polish Team for season 2017/18</h1>
+
+	<%jumpersList.forEach(function(item, index){%>
+		<%if (index%2===0) {%>
+			<div class="row-flex-card">
+		<%}%>
+			<div class="card">
+				<h2 class="card__header"><%=item.name%></h2>
+				<div class="card-details">
+						<img class="card-details__image" src="/images/ski jumpers/<%=item.image%>" alt="<%=item.image%>">
+					<div class="card-details__jumper-details">
+						<span class="jumper-details__item">Age: <%=item.age%>, Born in: <%=item.city%></span>
+						<span class="jumper-details__item">Personal Best: <%=item.PB%></span>
+						<span class="jumper-details__item jumper-details__item--header">World Cup Stats:</span>
+						<span class="jumper-details__item">Individual Wins: <%=item.worldCup.indWins%></span>
+						<span class="jumper-details__item">Team Wins: <%=item.worldCup.teamWins%></span>
+						<span class="jumper-details__item">Individual Podiums: <%=item.worldCup.indPodiums%></span>
+						<span class="jumper-details__item">Team Podiums: <%=item.worldCup.teamPodiums%></span>
+						<span class="jumper-details__item">Individual Starts: <%=item.worldCup.indStarts%></span>
+						<%if (item.worldCup.yellowBibs){%>
+							<span class="jumper-details__item">Yellow Bibs: <%=item.worldCup.yellowBibs%></span>
+						<%}%>
+
+						<%if (item.worldChampionschips){%>
+							<span class="jumper-details__item jumper-details__item--header">World Championships:</span>
+							<%if (item.worldChampionschips.gold){%>
+								<span class="jumper-details__item">Gold: <%=item.worldChampionschips.gold%></span>
+							<%}%>
+							<%if (item.worldChampionschips.silver){%>
+								<span class="jumper-details__item">Silver: <%=item.worldChampionschips.silver%></span>
+							<%}%>
+							<%if (item.worldChampionschips.bronze){%>
+								<span class="jumper-details__item">Bronze: <%=item.worldChampionschips.bronze%></span>
+							<%}%>
+						<%}%>
+
+						<%if (item.olympics){%>
+							<span class="jumper-details__item jumper-details__item--header">Olympics:</span>
+							<%if (item.olympics.gold){%>
+								<span class="jumper-details__item">Gold: <%=item.olympics.gold%></span>
+							<%}%>
+							<%if (item.olympics.silver){%>
+								<span class="jumper-details__item">Silver: <%=item.olympics.silver%></span>
+							<%}%>
+							<%if (item.olympics.bronze){%>
+								<span class="jumper-details__item">Bronze: <%=item.olympics.bronze%></span>
+							<%}%>
+						<%}%>
+					</div>
+				</div>
+				<p class="card__summary"><%=item.summary%></p>
+			</div>
+
+		<%if (index%2) {%>
+			</div>
+		<%}%>
+	<%});%>
+
+</div>
+
+<%include partials/templates/scripts%>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.row-flex-card
+    display: flex
+
+.card
+    border: 2px solid $theme-cloud
+    border-radius: 5px
+    background: linear-gradient(to bottom, $theme-stormy, $theme-evening)
+    width: 50%
+    margin: 10px 0.5%
+    padding: 0 15px
+    color: white
+    +element('header')
+        text-align: center
+        background-color: $theme-cloud
+        margin: 0 -15px 15px -15px
+        padding: 5px 0
+        color: $theme-evening
+    +element('summary')
+        margin-top: 25px
+        border-top: 1px solid white
+        border-bottom: 1px solid white
+        text-align: justify
+        padding: 3px 0
+
+.card-details
+    display: flex
+    align-items: flex-start
+    +element('image')
+        border-radius: 5px
+    +element('jumper-details')
+        padding-left: 10px
+        font-weight: 300
+        font-size: 1.5rem
+
+.jumper-details
+    +element('item')
+        display: block
+        padding-left: 10px
+        +modifier('header')
+            font-weight: 400
+            padding: 7px 0 2px 0
+            color: yellow
+
+
+@media screen and (max-width: 991px)
+    .row-flex-card
+        flex-direction: column
+
+    .card
+        width: 100%
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+    .card-details
+        flex-direction: column
+        +element('image')
+            margin: 0 auto
+            padding-bottom: 15px
+
+@media screen and (max-width: 991px)
+    .card-details
+        flex-direction: row
+
+@media screen and (max-width: 540px)
+    .card-details
+        flex-direction: column
+        +element('image')
+            margin: 0 auto
