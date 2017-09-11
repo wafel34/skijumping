@@ -6,8 +6,11 @@
 <%include partials/templates/header%>
 
 <div class="container">
-	<h1 class="calendar-header text-center">Polish Team for season 2017/18</h1>
+	<!--HEADER-->
+	<h1 class="skijumpers-header text-center">Polish Team for season 2017/18</h1>
 
+	<!--MAIN CONENT-->
+	<!--GO THROUGH JUMPERS LIST AND GET DATA-->
 	<%jumpersList.forEach(function(item, index){%>
 		<%if (index%2===0) {%>
 			<div class="row-flex-card">
@@ -54,13 +57,13 @@
 								<span class="jumper-details__item">Bronze: <%=item.olympics.bronze%></span>
 							<%}%>
 						<%}%>
-					</div>
-				</div>
+					</div><!--CARDE DETAILS > JUMPER DETAILS-->
+				</div><!--CARD DETAILS-->
 				<p class="card__summary"><%=item.summary%></p>
-			</div>
+			</div> <!--CARD-->
 
 		<%if (index%2) {%>
-			</div>
+			</div> <!--ROW-FLEX CLOSE-->
 		<%}%>
 	<%});%>
 
