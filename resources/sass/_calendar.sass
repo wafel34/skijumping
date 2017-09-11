@@ -1,32 +1,41 @@
 .calendar-header
-    display: block
-    border: 3px solid $theme-evening
-    color: $theme-stormy
-    width: 75%
-    margin: 20px auto
-    padding: 20px
+    @extend .skijumpers-header
 
 .calendar-list
     list-style-type: none
     padding-left: 0
 
     +element('item')
-        background-color: #fff
+        color: white
+        background: url('/images/abstract.jpg') no-repeat, linear-gradient(to bottom, $theme-stormy, $theme-evening)
+        background-blend-mode: color
+        background-size: cover
         margin-bottom: 15px
         padding: 10px 15px
-        box-shadow: 2px 2px 4px 0px $theme-stormy
+        box-shadow: 2px 2px 4px 0px $theme-sunset
         border-radius: 2px
         font-weight: 400
         position: relative
-
+        a
+            color: white
+            display: block
+            border: 1px solid white
+            padding: 3px 5px
+            border-radius: 3px
+            background-color: rgba(0,0,0,.5)
+            transition: transform .3s ease-in-out
+            &:hover,
+            &:focus
+                text-decoration: none
+                transform: translate(-5px)
         +modifier('passed')
-            box-shadow: 2px 2px 4px 0px $theme-sunset
+            box-shadow: 2px 2px 4px 0px $green-completed
 
 .completed
     position: absolute
     top: 10px
     right: 15px
-    color: $theme-sunset
+    color: $yellow
 
 .read-more
     position: absolute
