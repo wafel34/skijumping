@@ -4,29 +4,36 @@
 .card
     border: 2px solid $theme-cloud
     border-radius: 5px
-    background: linear-gradient(to bottom, $theme-stormy, $theme-evening)
+    background: url('/images/abstract.jpg') no-repeat, linear-gradient(to bottom, $theme-stormy, $theme-evening)
+    background-blend-mode: color
+    background-size: cover
     width: 50%
     margin: 10px 0.5%
     padding: 0 15px
     color: white
     +element('header')
         text-align: center
-        background-color: $theme-cloud
+        background-color: rgba($theme-cloud-rgb,.6)
+        background-blend-mode: overlay
         margin: 0 -15px 15px -15px
         padding: 5px 0
-        color: $theme-evening
+        color: $yellow
+        border-bottom: 2px solid $yellow
+        text-shadow: 1px 1px rgba(255,255,255,.3)
     +element('summary')
-        margin-top: 25px
+        margin: 25px -15px 15px -15px
+        padding: 15px
         border-top: 1px solid white
         border-bottom: 1px solid white
+        background-color: rgba(0,0,0, .5)
         text-align: justify
-        padding: 3px 0
 
 .card-details
     display: flex
     align-items: flex-start
     +element('image')
         border-radius: 5px
+        border: 2px solid $yellow
     +element('jumper-details')
         padding-left: 10px
         font-weight: 300
@@ -39,7 +46,7 @@
         +modifier('header')
             font-weight: 400
             padding: 7px 0 2px 0
-            color: yellow
+            color: $yellow
 
 
 @media screen and (max-width: 991px)
@@ -52,17 +59,16 @@
 
 @media screen and (min-width: 992px) and (max-width: 1199px)
     .card-details
-        flex-direction: column
         +element('image')
-            margin: 0 auto
-            padding-bottom: 15px
+            margin: 0 auto 15px auto
+            height: 200px
 
-@media screen and (max-width: 991px)
-    .card-details
-        flex-direction: row
+
 
 @media screen and (max-width: 540px)
     .card-details
         flex-direction: column
         +element('image')
-            margin: 0 auto
+            margin: 0 auto 15px auto
+            height: 200px
+            width: auto
