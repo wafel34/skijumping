@@ -9,10 +9,9 @@
         <img src="/images/hills/<%=data.place%>.jpg" alt="<%=data.name%>" class="image-header__img">
     </div>
 
-    <h1 class="text-center hill-h1"><%=data.place%>, <%=data.country%></h1>
+    <h1 class="text-center hill-header"><%=data.place%>, <%=data.country%></h1>
 
     <div class="row-flex">
-        <div class="col-sm-6 row-flex__column">
             <table class="table">
                     <thead>
                         <tr>
@@ -46,11 +45,7 @@
                         </tr>
                     </tbody>
             </table>
-        </div>
-
-        <div class="col-sm-6">
             <iframe class="iframe" src="<%=data.yt%>" frameborder="0" allowfullscreen></iframe>
-        </div>
     </div><!--row-flex-->
     <p class="content"><%=data.description%></p>
 </div><!--container-->
