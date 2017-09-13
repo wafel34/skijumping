@@ -5,7 +5,7 @@
 <%include partials/templates/header%>
 
 <div class="container">
-    <div class="image-header">
+    <div class="image-header" id="image-header">
         <img src="/images/hills/<%=data.place%>.jpg" alt="<%=data.name%>" class="image-header__img">
     </div>
 
@@ -43,11 +43,24 @@
                             <%}%>
                             </th>
                         </tr>
+                        <tr>
+                            <th class="table-item--bold">Competitions this season:</th>
+                            <th class="table-item--light">
+
+                                <%data.competitions.map(function(item){%>
+                                    <span><%=item.date%>, <%=item.type%></span><br>
+                                <%})%>
+
+                            </th>
+                        </tr>
                     </tbody>
             </table>
             <iframe class="iframe" src="<%=data.yt%>" frameborder="0" allowfullscreen></iframe>
     </div><!--row-flex-->
-    <p class="content"><%=data.description%></p>
+    <div class="hill-description">
+        <p class="hill-description__content"><%=data.description%></p>
+    </div>
+
 </div><!--container-->
 
 
