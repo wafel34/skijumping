@@ -3,10 +3,42 @@ var express = require('express'),
 
 
 router.get('/', function(req, res){
-    var calendar = req.app.get('calendar');
+    var calendar = req.app.get('calendar'),
+        today = new Date(),
+        nextEvent = null,
+        previousEvent = null,
+        previousEventDate = null,
+        data = [];
+
+        // map through calendar file
+        data = calendar.map(function(item){
+            var temp = item.date.split(/\/| -/), //Split date with slash or space+dash combination ( -)
+                date = new Date(Date.UTC(temp[2], temp[1]-1, temp[0],21,0,0)); //create new date from details extracted in above split
+
+                //Find event dates:
+
+                //If previousEventDate is set to Null set it to current item
+                if (!previousEventDate) {
+                    previousEventDate = date;
+                    previousEvent = item;
+                } else { //If previousEventDate is NOT set as NULL check if current item date is bigger then previous item date and smaller than today
+                    if(date > previousEventDate && date < today) {
+                        previousEventDate = date;
+                        previousEvent = item;
+                    }
+                }
+
+                //Check if date is bigger then today and assingn it to nextEvent variable (but only do it for first date found)/
+                if (!nextEvent && date > today) {
+                    nextEvent = item;
+                }
+
+        });
 
     res.render('view_index', {
-        pageId: 'Ski Jumping'
+        pageId: 'Ski Jumping',
+        prevEvent: previousEvent,
+        nextEvent: nextEvent
     });
 });
 

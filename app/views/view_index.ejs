@@ -17,7 +17,21 @@
                 <p class="">Welcome in the world of this beautiful sport, where all it matters is pure competition and no negative
                     emotions! Enjoy this journey!</p>
             </article>
+    </section><!--lead-->
 
+    <section class="container details">
+        <div class="row-flex">
+            <div class="">
+                <h2>Last contest</h2>
+                <span><%=prevEvent.date%>, <%=prevEvent.place%><img src="images/<%=prevEvent.country%>.png"></span>
+                <span>Type: <%=prevEvent.type%></span>
+
+                <h2>Next contest</h2>
+                <span><%=nextEvent.date%>, <%=nextEvent.place%><img src="images/<%=nextEvent.country%>.png"></span>
+                <span>Type: <%=nextEvent.type%></span>
+            </div>
+            <iframe class="iframe" src="https://www.youtube.com/embed/I3E2ijxEwf8" frameborder="0" allowfullscreen></iframe>
+        </div>
 
     </section>
 </main>
