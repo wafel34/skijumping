@@ -1,8 +1,17 @@
 .footer
     margin-top: 50px
-    height: 100px
     background-color: $theme-evening
     color: #fff
     +element('row')
         display: flex
         justify-content: space-between
+        align-items: center
+    +element('icon')
+        text-decoration: none
+        display: inline-block
+        color: #fff
+        font-size: 3rem
+        padding: 25px 5px
+        &:hover,
+        &:focus
+            color: $yellow
