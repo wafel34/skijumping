@@ -2,7 +2,7 @@
   "name": "skijumping",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/views/view_index.js",
   "scripts": {
     "gulp": "gulp"
   },
