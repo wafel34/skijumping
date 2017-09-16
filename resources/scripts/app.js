@@ -38,8 +38,12 @@ DOMHANDLER.navStyling = function() {
             image.style.display = 'none';
             imageHeader.style.backgroundImage = "url('../images/hills/"+title+".jpg')";
         }
-        DOMHANDLER.checkWidth();
+
+
+        //attach event listener
         window.addEventListener('resize', DOMHANDLER.checkWidth, false);
+        //call fucntion also when page loaded
+        DOMHANDLER.checkWidth();
 
 
 //
