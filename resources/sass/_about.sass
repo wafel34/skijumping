@@ -1,0 +1,25 @@
+.about
+    margin-top: 25px
+    border: 2px solid $theme-sunset
+    border-radius: 5px
+    padding: 15px
+    background-color: $theme-evening
+    color: white
+    color: #fff
+    +element('lead')
+
+        +modifier('bold')
+            font-weight: 400
+
+    +element('link')
+        color: $yellow
+        &:hover,
+        &:focus
+            color: $yellow
+.list
+    margin: 25px 0
+    
+.list-inside
+    list-style-type: none
+    .list-item
+        list-style-type: disc

@@ -15,6 +15,7 @@ app.use(require('./routes/index'));
 app.use(require('./routes/calendar'));
 app.use(require('./routes/hill'));
 app.use(require('./routes/skijumpers'));
+app.use(require('./routes/about'));
 
 app.listen(5000);
 console.log('Express listening on port 5000');
