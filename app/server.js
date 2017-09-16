@@ -4,6 +4,7 @@ var express = require('express'),
     hillsList = require('./data/hills.json'),
     jumpersList = require('./data/skijumpers.json');
 
+app.set('port', (process.env.PORT || 5000))
 app.set('calendar', calendar);
 app.set('hillsList', hillsList);
 app.set('jumpersList', jumpersList);
@@ -17,5 +18,5 @@ app.use(require('./routes/hill'));
 app.use(require('./routes/skijumpers'));
 app.use(require('./routes/about'));
 
-app.listen(5000);
+app.listen(app.get('port'));
 console.log('Express listening on port 5000');
