@@ -5,45 +5,42 @@
 <%include partials/templates/header%>
 
 <div class="container">
-
-
-    <h1 class="text-center hill-header">About the project</h1>
-    <article class="about">
-        <p class="about__lead">
-            <span class="about__lead--bold">This website is my web developement project with using Express JS for the first time.
-            Following technologies were used:</span>
-            <ul class="list">
-                <li class="list-item">Express JS as a web server</li>
-                <li class="list-item">EJS as a templating engine</li>
-                <li class="list-item">Sass</li>
-                <li class="list-item">Bootstrap 3</li>
-                <li class="list-item">Git and GitHub</li>
-                <li class="list-item">Gulp as a task runner with following dependencies:</li>
-                <li class="list-inside">
-                    <ul>
-                        <li class="list-item">bootstrap-sass</li>
-                        <li class="list-item">browserify as bundler</li>
-                        <li class="list-item">browser-sync for live reload</li>
-                        <li class="list-item">jQuery to work with bootstrap</li>
-                        <li class="list-item">autoprefixer, nodemon and few more (see package.json for details)</li>
-                    </ul>
-                </li>
-            </ul>
-        </p>
-        <p>
-            <a class="about__link" href="https://github.com/wafel34/skijumping" title="Auhor's Github Account">See Github Repository</a>
-        </p>
-        <p>
-            <a class="about__link" href="https://www.linkedin.com/in/pawel-marcinkowski/" title="Auhor's LinkedIn Account">See my LinkedIn Profile</a>
-        </p>
-
+    <article>
+        <h1 class="text-center hill-header">About the project</h1>
+        <div class="about">
+            <p class="about__lead">
+                <span class="about__lead--bold">This website is my web developement project with using Express JS for the first time.
+                Following technologies were used:</span>
+                <ul class="list">
+                    <li class="list-item">Express JS as a web server</li>
+                    <li class="list-item">EJS as a templating engine</li>
+                    <li class="list-item">Sass</li>
+                    <li class="list-item">Bootstrap 3</li>
+                    <li class="list-item">Git and GitHub</li>
+                    <li class="list-item">Gulp as a task runner with following dependencies:</li>
+                    <li class="list-inside">
+                        <ul>
+                            <li class="list-item">bootstrap-sass</li>
+                            <li class="list-item">browserify as bundler</li>
+                            <li class="list-item">browser-sync for live reload</li>
+                            <li class="list-item">jQuery to work with bootstrap</li>
+                            <li class="list-item">autoprefixer, nodemon and few more (see package.json for details)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <a class="about__link" href="https://github.com/wafel34/skijumping" title="Auhor's Github Account">See Github Repository</a>
+            </p>
+            <p>
+                <a class="about__link" href="https://www.linkedin.com/in/pawel-marcinkowski/" title="Auhor's LinkedIn Account">See my LinkedIn Profile</a>
+            </p>
+        </div>
     </article>
-
-
 </div><!--container-->
 
-<%include partials/templates/footer%>
+<%include partials/templates/footer%><!--include footer-->
 
-<%include partials/templates/scripts%>
+<%include partials/templates/scripts%><!--include scripts-->
 </body>
 </html>

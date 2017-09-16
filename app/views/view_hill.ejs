@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<%include partials/templates/html_head%>
+<%include partials/templates/html_head%><!--include HTML head-->
 <body>
-<%include partials/templates/header%>
+<%include partials/templates/header%><!--include header-->
 
 <div class="container">
     <div class="image-header" id="image-header">
@@ -55,16 +55,15 @@
                         </tr>
                     </tbody>
             </table>
-            <iframe class="iframe" src="<%=data.yt%>" frameborder="0" allowfullscreen></iframe>
+            <iframe class="iframe" src="<%=data.yt%>" frameborder="0" allowfullscreen></iframe><!--YT video-->
     </div><!--row-flex-->
     <div class="hill-description">
         <p class="hill-description__content"><%=data.description%></p>
-    </div>
-
+    </div><!--hill description-->
 </div><!--container-->
 
-<%include partials/templates/footer%>
+<%include partials/templates/footer%><!--include footer-->
 
-<%include partials/templates/scripts%>
+<%include partials/templates/scripts%><!--include scripts-->
 </body>
 </html>

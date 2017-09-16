@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<%include partials/templates/html_head%>
+<%include partials/templates/html_head%><!--include HTML head-->
 <body>
-
-<%include partials/templates/header%>
+<%include partials/templates/header%><!--indlude header-->
 
 <div class="container">
 	<!--HEADER-->
@@ -12,13 +11,16 @@
 	<!--MAIN CONENT-->
 	<!--GO THROUGH JUMPERS LIST AND GET DATA-->
 	<%jumpersList.forEach(function(item, index){%>
-		<%if (index%2===0) {%>
+		<%if (index%2===0) {%><!--IF INDEX IS EVEN (NOT ODD), ADD ROW DIV OUTSIDE-->
 			<div class="row-flex-card">
 		<%}%>
 			<div class="card">
-				<h2 class="card__header"><%=item.name%></h2>
+				<h2 class="card__header"><%=item.name%></h2><!--SKIJUMPER NAME-->
 				<div class="card-details">
+						<!--SKIJUMPER PHOTO-->
 						<img class="card-details__image" src="/images/ski jumpers/<%=item.image%>" alt="<%=item.image%>">
+
+						<!--SKIJUMPER DETAILS-->
 					<div class="card-details__jumper-details">
 						<span class="jumper-details__item">Age: <%=item.age%>, Born in: <%=item.city%></span>
 						<span class="jumper-details__item">Personal Best: <%=item.PB%></span>
@@ -69,8 +71,8 @@
 
 </div>
 
-<%include partials/templates/footer%>
+<%include partials/templates/footer%><!--include footer-->
 
-<%include partials/templates/scripts%>
+<%include partials/templates/scripts%><!--include scripts-->
 </body>
 </html>

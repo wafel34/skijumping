@@ -3,6 +3,10 @@ var $ = window.jQuery = require("jQuery"),
     DOMHANDLER = {};
 
 
+/*
+This function check the width of window and depending on size it adds or removes
+event listener that is responsible for styling the navbar.
+*/
 DOMHANDLER.checkWidth = function() {
     var wWidth = window.innerWidth;
 
@@ -12,6 +16,11 @@ DOMHANDLER.checkWidth = function() {
         document.removeEventListener('scroll', DOMHANDLER.navStyling, false);
     }
 };
+
+/*
+This function is responsible for styling navigation bar.
+It checks if Page Offset from the top is greater than header height and applies relevant class.
+*/
 DOMHANDLER.navStyling = function() {
     var headerH = document.querySelector('.header').offsetHeight,
         navBar = document.getElementById('navigation'),
@@ -40,7 +49,7 @@ DOMHANDLER.navStyling = function() {
         }
 
 
-        //attach event listener
+        //attach event listener for window resize
         window.addEventListener('resize', DOMHANDLER.checkWidth, false);
         //call fucntion also when page loaded
         DOMHANDLER.checkWidth();

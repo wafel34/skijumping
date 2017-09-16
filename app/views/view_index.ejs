@@ -1,28 +1,29 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<%include partials/templates/html_head%>
+<%include partials/templates/html_head%><!--include HTML head-->
 <body>
-<%include partials/templates/header%>
+<%include partials/templates/header%><!--include header-->
 
 <main>
     <section class="lead">
+        <h2 class="visually-hidden">Welcome!</h2>
         <div class="container">
-            <article class="lead__content">
-                <p class="">Welcome on the Polish Ski Jumpers Fan Page for winter season 2016/2017.
+            <div class="lead__content">
+                <p>Welcome on the Polish Ski Jumpers Fan Page for winter season 2016/2017.
                     This website was made as a web developement project, that main goal was to practice Express Js.
                     Please go to <a href="/about" title="Go to About page" class="content__link">'About'</a> section for more details.
                 </p>
-                <p class="">What will you find here? Information about 2016/2017 season such as: polish squad with jumpers details,
+                <p>What will you find here? Information about 2016/2017 season such as: polish squad with jumpers details,
                     calendar of all events and details of all ski jumping hill that will host competitions.
                 </p>
-                <p class="">Welcome in the world of this beautiful sport, where all it matters is pure competition and no negative
+                <p>Welcome in the world of this beautiful sport, where all it matters is pure competition and no negative
                     emotions! Enjoy this journey!</p>
-            </article>
-        </div>
-
+            </div><!--lead__content-->
+        </div><!--container-->
     </section><!--lead-->
 
     <section class="details">
+        <h2 class="visually-hidden">Find out more</h2>
         <div class="container">
             <div class="row-flex">
                 <div class="contests">
@@ -36,18 +37,16 @@
                         <h2>Next contest</h2>
                         <span><%=nextEvent.date%>, <%=nextEvent.place%><img src="images/<%=nextEvent.country%>.png"></span>
                         <span>Type: <%=nextEvent.type%></span>
-                    </div>
-
-
-                </div>
+                    </div><!--contests__item-->
+                </div><!--contests-->
                 <iframe class="iframe" src="https://www.youtube.com/embed/vN9HLTqCUXk" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
+            </div><!--row-flex-->
+        </div><!--container-->
+    </section><!--section details-->
 </main>
 
-<%include partials/templates/footer%>
+<%include partials/templates/footer%><!--include footer-->
 
-<%include partials/templates/scripts%>
+<%include partials/templates/scripts%><!--contests include scripts-->
 </body>
 </html>

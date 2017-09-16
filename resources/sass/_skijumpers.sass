@@ -5,6 +5,7 @@
     border-radius: 5px
     color: white
     border: 2px solid $theme-sunset
+
 .row-flex-card
     display: flex
 
@@ -56,8 +57,10 @@
             color: $yellow
             text-decoration: underline
 
+//MEDIA QUERIES
 
 @media screen and (max-width: 991px)
+
     .row-flex-card
         flex-direction: column
 
@@ -65,18 +68,17 @@
         width: 100%
         margin: 10px 0
 
-
 @media screen and (min-width: 992px) and (max-width: 1199px)
     .card-details
         +element('image')
             margin: 0 auto 15px auto
             height: 200px
 
-
-
 @media screen and (max-width: 540px)
+
     .skijumpers-header
         font-size: 2.2rem
+        
     .card-details
         flex-direction: column
         +element('image')

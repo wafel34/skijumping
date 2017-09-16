@@ -1,20 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<%include partials/templates/html_head%>
+<%include partials/templates/html_head%><!--include HTML Head-->
 <body>
 
-<%include partials/templates/header%>
+<%include partials/templates/header%><!--include header-->
 
 <div class="container">
-	<h1 class="calendar-header text-center">Season 2017/18 calendar</h1>
+	<h1 class="calendar-header text-center">Season 2017/18 calendar</h1><!--main header-->
 	<ul class="calendar-list">
+		<!--map through calendar file and display details-->
 	<%calendar.forEach(function(item, index){%>
 
-
+		<!--if index of item is even (not odd) wrap it with 'row' class-->
 		<%if (index%2===0) {%>
 			<div class="row">
 		<%}%>
 				<div class="col-md-6">
+
+					<!--if event date is in the past comparing to current date, apply style for completed event-->
 					<%if(item.dateObj<today){%>
 						<li class="calendar-list__item calendar-list__item--passed">
 							<p class="completed">COMPLETED <span class="fa fa-check-circle"></span></p>
@@ -28,16 +31,17 @@
 						<p class="read-more"><a href="/hills/<%=item.place%>">Read more...</a></p>
 					</li>
 				</div>
-			<%if (index%2) {%>
+
+		<!--if index of item is even (not odd) wrap it with 'row' class (close the tag below)-->
+		<%if (index%2) {%>
 			</div>
 		<%}%>
 	<%});%>
 	</ul>
 </div>
 
+<%include partials/templates/footer%><!--include footer-->
 
-<%include partials/templates/footer%>
-
-<%include partials/templates/scripts%>
+<%include partials/templates/scripts%><!--include scripts-->
 </body>
 </html>
