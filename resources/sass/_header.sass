@@ -1,4 +1,11 @@
 //MAIN
+
+
+.navbar,
+.navbar-fixed-top,
+.navigation
+    border: none !important
+
 .header
     height: 400px
     background: url('../images/banner.jpg') no-repeat top center
@@ -19,6 +26,14 @@
         background-color: white
         transition: transform .3s ease-in-out
 
+.navbar-brand
+    background: url('../images/logo.png') no-repeat center
+    background-size: contain
+    height: 50px
+    width: 105px
+
+.brand-image
+    display: none
 //BOOTSTRAP OVERRIDES
 .navbar-toggle
     &:focus,
@@ -37,14 +52,22 @@
 .nav > li >a:focus,
 .nav > li >a:hover
     background-color: $theme-sunset
-//MEDIA QUERIES
 
+.navbar-collapse
+    border-top: none
 //MEDIA QUERIES
 
 @media screen and (max-width: 767px)
+    .header-container
+        border-bottom: 2px solid #fff
+
+    .navigation
+        border-bottom: none
+
+
     .navigation-list
         background-color: rgba(152, 94, 109, .65)
-        margin: 1px -15px
+        margin: 0px -15px 0px -15px
         text-align: center
 
     .header
