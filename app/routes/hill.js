@@ -16,7 +16,9 @@ router.get('/hills/:hill', function(req, res){
 
     res.render('view_hill', {
         data: result,
-        pageId: hill
+        pageId: hill,
+        keywords: result.name + ', ski jumping hill, ' + result.place + ' hill, ' + result.country,
+        description: result.name +' is as ski jumping hill located in ' + result.place +', '+ result.country + '. Its size is: '+ result.hillSize + 'and hill record is: ' + result.hillRecord
     });
 });
 

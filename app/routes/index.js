@@ -36,9 +36,11 @@ router.get('/', function(req, res){
         });
 
     res.render('view_index', {
-        pageId: 'Ski Jumping',
+        pageId: 'Ski Jumping 2017/18',
         prevEvent: previousEvent,
-        nextEvent: nextEvent
+        nextEvent: nextEvent,
+        keywords: 'ski jumping, polish team in skijumping, polish skijumping team fanpage, season 2017 2018 ski jumping, winter sports',
+        description: 'Fanpage website of polish ski jumping team. Check out polish team squad, 2017/18 ski jumping calendar, and hills details.'
     });
 });
 
