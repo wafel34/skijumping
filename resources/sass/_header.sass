@@ -1,11 +1,5 @@
 //MAIN
 
-
-.navbar,
-.navbar-fixed-top,
-.navigation
-    border: none !important
-
 .header
     height: 400px
     background: url('../images/banner.jpg') no-repeat top center
@@ -18,7 +12,9 @@
     height: 52px
     background-color: rgba(152, 94, 109, .65)
     border-bottom: 2px solid #fff
-
+    transition: all .5s
+    +modifier('no-opacity')
+        background-color: $theme-sunset
     a
         color: white
 
@@ -35,10 +31,6 @@
 .brand-image
     display: none
 //BOOTSTRAP OVERRIDES
-.navbar-toggle
-    &:focus,
-    &:hover
-        background-color: $theme-sunset
 
 .navbar-toggle[aria-expanded="true"]
     span
@@ -51,7 +43,7 @@
 
 .nav > li >a:focus,
 .nav > li >a:hover
-    background-color: $theme-sunset
+    background-color: $theme-cloud
 
 .navbar-collapse
     border-top: none
@@ -63,10 +55,10 @@
 
     .navigation
         border-bottom: none
-
+        background-color: $theme-sunset
 
     .navigation-list
-        background-color: rgba(152, 94, 109, .65)
+        background-color: $theme-sunset
         margin: 0px -15px 0px -15px
         text-align: center
 

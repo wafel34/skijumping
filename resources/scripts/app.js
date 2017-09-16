@@ -1,5 +1,29 @@
 var $ = window.jQuery = require("jQuery"),
-    bootstrap = require('bootstrap-sass');
+    bootstrap = require('bootstrap-sass'),
+    DOMHANDLER = {};
+
+
+DOMHANDLER.checkWidth = function() {
+    var wWidth = window.innerWidth;
+
+    if (wWidth > 767) {
+        document.addEventListener('scroll', DOMHANDLER.navStyling, false);
+    } else {
+        document.removeEventListener('scroll', DOMHANDLER.navStyling, false);
+    }
+};
+DOMHANDLER.navStyling = function() {
+    var headerH = document.querySelector('.header').offsetHeight,
+        navBar = document.getElementById('navigation'),
+        pageOffset = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (pageOffset > headerH - 50) {
+            navBar.classList.add('navigation--no-opacity');
+        } else {
+            navBar.classList.remove('navigation--no-opacity');
+        }
+};
+
 
 (function(){
 
@@ -14,5 +38,9 @@ var $ = window.jQuery = require("jQuery"),
             image.style.display = 'none';
             imageHeader.style.backgroundImage = "url('../images/hills/"+title+".jpg')";
         }
+        DOMHANDLER.checkWidth();
+        window.addEventListener('resize', DOMHANDLER.checkWidth, false);
 
+
+//
 }());
