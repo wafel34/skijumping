@@ -11,11 +11,15 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     plumber = require('gulp-plumber'),
     concat = require('gulp-concat'),
-    browserify = require('gulp-browserify');
+    browserify = require('gulp-browserify'),
+    gulpIf = require('gulp-if'),
+    minifyCss = require('gulp-minify-css'),
+    uglify = require('gulp-uglify');
 
 var sassSources = './resources/sass/style.sass',
     jsSources = './resources/scripts/**/*.js',
-    outputDir;
+    outputDir,
+    env = 'production';
 
     outputDir = './app/public';
 
@@ -68,7 +72,7 @@ gulp.task('js', function () {
             .pipe(sourcemaps.init())
             .pipe(concat('main.js'))
             .pipe(browserify())
-            //.pipe(gulpIf(env === 'production', uglify()))
+            .pipe(gulpIf(env === 'production', uglify()))
             .pipe(sourcemaps.write())
             .pipe(gulp.dest(outputDir + '/js'))
             .pipe(browserSync.stream())
@@ -84,7 +88,7 @@ gulp.task('sass', function () {
             .pipe(sass())
             .pipe(autoprefixer())
             .pipe(sourcemaps.write())
-            //.pipe(gulpIf(env === 'production', minifyCss()))
+            .pipe(gulpIf(env === 'production', minifyCss()))
             .pipe(gulp.dest(outputDir + '/css'))
             .pipe(browserSync.stream())
 });
