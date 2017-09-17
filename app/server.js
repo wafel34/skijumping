@@ -1,5 +1,6 @@
 var express = require('express'),
     minifyHTML = require('express-minify-html'),
+    compression = require('compression'),
     app = express(),
     calendar = require('./data/calendar.json'),
     hillsList = require('./data/hills.json'),
@@ -25,7 +26,7 @@ app.use(minifyHTML({
         minifyJS:                  true
     }
 }));
-
+app.use(compression())
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/calendar'));
