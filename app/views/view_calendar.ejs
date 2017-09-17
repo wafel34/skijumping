@@ -7,7 +7,7 @@
 
 <div class="container">
 	<h1 class="calendar-header text-center">Season 2017/18 calendar</h1><!--main header-->
-	<ul class="calendar-list">
+	<div class="calendar-list">
 		<!--map through calendar file and display details-->
 	<%calendar.forEach(function(item, index){%>
 
@@ -19,17 +19,17 @@
 
 					<!--if event date is in the past comparing to current date, apply style for completed event-->
 					<%if(item.dateObj<today){%>
-						<li class="calendar-list__item calendar-list__item--passed">
+					<div class="calendar-list__item calendar-list__item--passed">
 							<p class="completed">COMPLETED <span class="fa fa-check-circle"></span></p>
 					<%} else { %>
-						<li class="calendar-list__item">
+						<div class="calendar-list__item">
 					<%}%>
 						<p>Date: <%=item.date%></p>
-						<p>Place: <%=item.place%>, <%=item.country%> <img src="images/<%=item.country%>.png"></p>
+						<p>Place: <%=item.place%>, <%=item.country%> <img src="images/<%=item.country%>.png" alt=""></p>
 						<p>Type: <%=item.type%></p>
 
 						<p class="read-more"><a href="/hills/<%=item.place%>">Read more...</a></p>
-					</li>
+					</div>
 				</div>
 
 		<!--if index of item is even (not odd) wrap it with 'row' class (close the tag below)-->
@@ -37,7 +37,7 @@
 			</div>
 		<%}%>
 	<%});%>
-	</ul>
+	</div>
 </div>
 
 <%include partials/templates/footer%><!--include footer-->
