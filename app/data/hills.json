@@ -40,7 +40,7 @@
         ]
     },
     {
-        "place": "Nizhny Tagil",
+        "place": "Nizhny-Tagil",
         "country": "Russia",
         "name": "Tramplin Stork",
         "hillSize": "HS 96, 134",
@@ -116,7 +116,7 @@
         ]
     },
     {
-        "place": "Oberstdorf Heini-Klopfer",
+        "place": "Oberstdorf-Heini-Klopfer",
         "country": "Germany",
         "name": "Heini-Klopfer-Skiflugschanze",
         "hillSize": "HS-225",
@@ -180,7 +180,7 @@
         ]
     },
     {
-        "place": "Bad Mitterndorf",
+        "place": "Bad-Mitterndorf",
         "country": "Austria",
         "name": "Kulm",
         "hillSize": "HS-225",
