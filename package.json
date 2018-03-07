@@ -12,6 +12,8 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.4",
+    "express-minify-html": "^0.12.0",
+    "gulp-if-else": "^1.0.3",
     "gulp-nodemon": "^2.2.1"
   },
   "devDependencies": {
@@ -20,11 +22,14 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-browserify": "^0.5.1",
-    "gulp-nodemon": "^2.2.1",
+    "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-nodemon": "^2.2.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
     "jquery": "^3.2.1"
   }
 }

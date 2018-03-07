@@ -10,7 +10,10 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
     plumber = require('gulp-plumber'),
+    uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+    gulpIf = require('gulp-if'),
+    minifyCss = require('gulp-clean-css'),
     browserify = require('gulp-browserify');
 
 var sassSources = './resources/sass/style.sass',
@@ -18,6 +21,8 @@ var sassSources = './resources/sass/style.sass',
     outputDir;
 
     outputDir = './app/public';
+
+var env = 'production';
 
 
 var onError = function (err) {
@@ -68,8 +73,8 @@ gulp.task('js', function () {
             .pipe(sourcemaps.init())
             .pipe(concat('main.js'))
             .pipe(browserify())
-            //.pipe(gulpIf(env === 'production', uglify()))
-            .pipe(sourcemaps.write())
+            .pipe(gulpIf(env === 'production', uglify()))
+            .pipe(gulpIf(env !== 'production', sourcemaps.write()))
             .pipe(gulp.dest(outputDir + '/js'))
             .pipe(browserSync.stream())
 });
@@ -83,8 +88,8 @@ gulp.task('sass', function () {
             .pipe(sourcemaps.init({loadMaps: true}))
             .pipe(sass())
             .pipe(autoprefixer())
-            .pipe(sourcemaps.write())
-            //.pipe(gulpIf(env === 'production', minifyCss()))
+            .pipe(gulpIf(env !== 'production',sourcemaps.write()))
+            .pipe(gulpIf(env === 'production', minifyCss()))
             .pipe(gulp.dest(outputDir + '/css'))
             .pipe(browserSync.stream())
 });

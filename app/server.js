@@ -2,7 +2,8 @@ var express = require('express'),
     app = express(),
     calendar = require('./data/calendar.json'),
     hillsList = require('./data/hills.json'),
-    jumpersList = require('./data/skijumpers.json');
+    jumpersList = require('./data/skijumpers.json'),
+    minifyHTML = require('express-minify-html');
 
 app.set('port', (process.env.PORT || 5000))
 app.set('calendar', calendar);
@@ -10,6 +11,19 @@ app.set('hillsList', hillsList);
 app.set('jumpersList', jumpersList);
 app.set('view engine', "ejs");
 app.set('views', "./app/views");
+
+app.use(minifyHTML({
+    override:      true,
+    exception_url: false,
+    htmlMinifier: {
+        removeComments:            true,
+        collapseWhitespace:        true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes:     true,
+        removeEmptyAttributes:     true,
+        minifyJS:                  true
+    }
+}));
 
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
